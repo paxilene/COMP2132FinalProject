@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    min-height: 100%; 
+    background-color: rgb(235, 233, 204);
+    padding-bottom: 100px;   
+}
+
+html{
+    height: 100%;
+}
+h1 {
+color: rgb(241, 234, 234);
+text-align: center;
+background-color: rgb(63, 22, 212);
+font-family: cursive;
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+    color: rgb(5, 5, 46);
+    background-color: gold;
+}
+ul {
+    list-style: none;
+    font-size: larger;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#logo{
+    background-color: rgb(12, 12, 82);
+    color: whitesmoke;
+    height: 35px;
+    padding: 7px;
+    
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.score-container{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+}
+  
+button{
+    background-color: rgb(160, 186, 235);
+    font-size: 19px;
+    border-radius: 5px;
+    padding: 5px;
+}
+a {
+    color: rgb(12, 3, 63);
+}
+
+.players {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size:25px;
+    // background-color: burlywood;
+    height: 35px;   
+}
+.dices-container {
+    text-align: center;
+    margin-top: 15px;
+}
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+.playing-dices {
+    position: relative;
+}
+.playing-dice-1{
+    position: relative;
+    top: 15px;
+}
+.playing-dice-6{
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+.rollDice_btn{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgb(164, 206, 164);
+}
+
+ol {
+    list-style: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.scores-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.total-scores-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: darkred;
+    font-size: 25px;
+    // background-color: rgb(189, 120, 157);
+    text-align: center;
+    margin-top: 15px;
+}
+
+#winner{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 45px;
+    color: red;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer {
+    height: 75px;
+    background-color: #1e4d07;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
