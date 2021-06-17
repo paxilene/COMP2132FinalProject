@@ -13,13 +13,8 @@ body {
 html{
     height: 100%;
 }
-h1 {
-color: rgb(241, 234, 234);
-text-align: center;
-background-color: rgb(63, 22, 212);
-font-family: cursive;
-}
-.list {
+
+#list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -28,12 +23,6 @@ font-family: cursive;
     color: rgb(5, 5, 46);
     background-color: gold;
 }
-ul {
-    list-style: none;
-    font-size: larger;
-    font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
 #logo{
     background-color: rgb(12, 12, 82);
     color: whitesmoke;
@@ -41,6 +30,93 @@ ul {
     padding: 7px;
     
 }
+#generalImage {
+    width: 100%;
+    height: auto;
+}
+.banner {
+  position: relative;
+  border: solid 3px rgb(183, 201, 25);
+}
+
+h1 {
+color: gold;
+text-align: center;
+font-family: cursive;
+}
+
+.banner h1 {
+    
+    line-height: 1;
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 7vw;
+}
+
+section {
+    background-color: rgb(202, 163, 182);
+    border: solid 3px green;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+h2 {
+    color: rgb(69, 53, 212);
+}
+h3 {
+    color: rgb(39, 71, 7);
+    padding-top: 15px;
+}
+ul {
+    padding-left: 25px;
+    font-size: larger;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.wrapper {
+    border: solid 5px rgb(19, 16, 16);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.player {
+    // background-color: rgb(183, 201, 25);
+    border:solid 5px rgb(162, 179, 10);
+    border-radius: 15px;
+}
+.username {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.avatar {
+    border: solid 3px red;
+}
+img {
+    max-width: 100%;
+}
+._dices {
+    border: solid 3px green;
+}
+.rollDice_btn{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.scores {
+border: solid 3px orangered;
+margin-bottom: 15px;
+}
+
+.final_score {
+    border: solid 3px brown;
+    padding-bottom: 15px;
+}
+
 .main{
     display: flex;
     flex-direction: row;
@@ -92,11 +168,7 @@ a {
     top: 15px;
     right: 0;
 }
-.rollDice_btn{
-    margin-top: 30px;
-    margin-bottom: 15px;
-    text-align: center;
-}
+
 
 button:hover {
     background-color: rgb(164, 206, 164);
@@ -105,13 +177,6 @@ button:hover {
 ol {
     list-style: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-}
-
-.scores-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     
 }
 
@@ -126,7 +191,8 @@ ol {
     margin-top: 15px;
 }
 
-#winner{
+#winner {
+    border: solid 3px rgb(143, 10, 148);
     margin-top: 15px;
     text-align: center;
     font-weight: bolder;

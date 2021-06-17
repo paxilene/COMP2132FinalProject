@@ -16,14 +16,7 @@ html {
   height: 100%;
 }
 
-h1 {
-  color: #f1eaea;
-  text-align: center;
-  background-color: #3f16d4;
-  font-family: cursive;
-}
-
-.list {
+#list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,18 +34,115 @@ h1 {
   background-color: gold;
 }
 
-ul {
-  list-style: none;
-  font-size: larger;
-  font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 #logo {
   background-color: #0c0c52;
   color: whitesmoke;
   height: 35px;
   padding: 7px;
+}
+
+#generalImage {
+  width: 100%;
+  height: auto;
+}
+
+.banner {
+  position: relative;
+  border: solid 3px #b7c919;
+}
+
+h1 {
+  color: gold;
+  text-align: center;
+  font-family: cursive;
+}
+
+.banner h1 {
+  line-height: 1;
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 7vw;
+}
+
+section {
+  background-color: #caa3b6;
+  border: solid 3px green;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+h2 {
+  color: #4535d4;
+}
+
+h3 {
+  color: #274707;
+  padding-top: 15px;
+}
+
+ul {
+  padding-left: 25px;
+  font-size: larger;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  border: solid 5px #131010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.player {
+  border: solid 5px #a2b30a;
+  border-radius: 15px;
+}
+
+.username {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.avatar {
+  border: solid 3px red;
+}
+
+img {
+  max-width: 100%;
+}
+
+._dices {
+  border: solid 3px green;
+}
+
+.rollDice_btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.scores {
+  border: solid 3px orangered;
+  margin-bottom: 15px;
+}
+
+.final_score {
+  border: solid 3px brown;
+  padding-bottom: 15px;
 }
 
 .main {
@@ -124,12 +214,6 @@ a {
   right: 0;
 }
 
-.rollDice_btn {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
 button:hover {
   background-color: #a4cea4;
 }
@@ -137,18 +221,6 @@ button:hover {
 ol {
   list-style: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.scores-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .total-scores-container {
@@ -168,6 +240,7 @@ ol {
 }
 
 #winner {
+  border: solid 3px #8f0a94;
   margin-top: 15px;
   text-align: center;
   font-weight: bolder;
