@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Dice Game</title>
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <ul id="list">
+                <li id="logo">BCIT</li>
+                <li>Final Project</li>
+                <li>A00823303</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <img id="generalImage" src="./pictures/dices.JPG" alt="Six multi-colored dices">
+            <h1>Dice Game</h1>
+        </div>
+
+        <section>
+            <h2>About the game</h2>
+            <h3>Rules</h3>
+            <ul id="rules">
+                <li>Each player has to roll a pair of dice 3 times.</li>
+                <li>If any of the players two dice comes up as a 1 then the score for that round for the
+                    player is 0.</li>
+                eg: if the player rolls a 6 and 1, they get a score of 0
+                <li>If the player rolls a pair of the same numbers then the players score is the total of the two dice
+                    times 2.</li>
+                eg: if he player rolls 5 and 5, they get a score of (5+5)*2=20
+                <li>If the player rolls any other combination of dice other than the ones mentioned above
+                    then the players score is the total value of the two dice.</li>
+                eg: player rolls a 3 and 2,
+                player gets a score of 3+2=5
+            </ul>
+        </section>
+
+        <div class="wrapper">
+            <div class="player">
+
+                <p class="username">Player</p>
+
+                <div class="avatar">
+                    <img src="./pictures/player.jpeg" alt="Man avatar with suit">
+                </div>
+                <div id="player_dices" class="default_dices">
+                    <div class="_dices">
+                        <img src="./pictures/red_dice1.jpg">
+                    </div>
+                    <div class="_dices">
+                        <img src="./pictures/red_dice2.jpg">
+                    </div>
+
+                </div>
+                <div class="roll_dice">
+                    <button id="player_dices" type="button" onclick="playerRollsDice(player1)">Player Rolling
+                        Dice</button>
+                </div>
+
+                <div id="player_scores" class="scores"></div>
+
+                <div id="player_total_score"></div>
+
+            </div>
+
+            <div class="player">
+
+                <div>
+                    <p class="username">Computer</p>
+                </div>
+
+                <div class="avatar">
+                    <img src="./pictures/computer.jpg" alt="Computer screen with face">
+                </div>
+
+                <div id="cpu_dices" class="default_dices">
+                    <div class="_dices">
+                        <img src="./pictures/white_dice1.jpg">
+                    </div>
+                    <div class="_dices">
+                        <img src="./pictures/white_dice2.jpg">
+                    </div>
+                </div>
+
+                <div class="roll_dice">
+                    <button id="computer_dices" type="button" onclick="playerRollsDice(cpu)">Computer Rolling
+                        Dice</button>
+                </div>
+
+                <div id="computer_scores" class="scores"></div>
+
+                <div id="computer_total_score"></div>
+
+            </div>
+        </div>
+
+
+        <div id="winner"></div>
+
+        <div id="reset">
+            <input type="reset" value="Reset" onclick="reset()">
+        </div>
+
+    </main>
+
+
+    <div class="footer">
+        <footer>
+            <p>COMP2132</p>
+            <P id="email"><a href="mailto:merbah_nabil@hotmail.com">Contact Email</a></P>
+            <small>®2021 Nabil Merbah</small>
+        </footer>
+    </div>
+</body>
+
+<script src="./scripts/dice-game.js"></script>
+
+</html>
